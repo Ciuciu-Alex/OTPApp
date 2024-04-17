@@ -1,0 +1,25 @@
+<div class="container">
+    <div *ngIf="!isLogged">
+      <h2>Welcome to OTP</h2>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>OTP</mat-label>
+          <input type="text" matInput [formControl]="tokenFormControl" placeholder="Ex. E3SAD2412">
+          @if (tokenFormControl.hasError('minlength') && !tokenFormControl.hasError('required')) {
+            <mat-error>Please enter a valid OTP with minimum 12 characters</mat-error>
+          }
+          @if (tokenFormControl.hasError('required')) {
+            <mat-error>OTP is <strong>required</strong></mat-error>
+          }
+        </mat-form-field>
+      </form>
+      <div class="button-options">
+        <button mat-flat-button color="primary" (click)="validateToken()">Validate OTP</button>
+        <button mat-flat-button color="primary" (click)="generateToken()">Generate new OTP</button>
+      </div>
+    </div>
+    <div *ngIf="isLogged">
+        <h1>YAY! YOU ARE LOGGED IN!</h1>
+        <button mat-flat-button color="primary" (click)="back()">Try another OTP</button>
+    </div>
+</div>

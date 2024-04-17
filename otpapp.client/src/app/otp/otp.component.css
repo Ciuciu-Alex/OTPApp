@@ -1,0 +1,18 @@
+.container{
+    width: min(100% - 15px, 800px);
+    margin-inline: auto;
+    form{
+        mat-form-field{
+            width: 100%;
+        }
+    }
+    .button-options {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        button{
+            width: 200px;
+        }
+    }
+}
+
