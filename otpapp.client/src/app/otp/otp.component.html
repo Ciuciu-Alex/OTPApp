@@ -4,7 +4,7 @@
       <form class="example-form">
         <mat-form-field class="example-full-width">
           <mat-label>OTP</mat-label>
-          <input type="text" matInput [formControl]="tokenFormControl" placeholder="Ex. E3SAD2412">
+          <input type="text" matInput [formControl]="tokenFormControl" placeholder="Ex. E3SAD212RT31">
           @if (tokenFormControl.hasError('minlength') && !tokenFormControl.hasError('required')) {
             <mat-error>Please enter a valid OTP with minimum 12 characters</mat-error>
           }

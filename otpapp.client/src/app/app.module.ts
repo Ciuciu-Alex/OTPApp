@@ -18,8 +18,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     OtpComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule,
-    AppRoutingModule,FormsModule, MatFormFieldModule, MatInputModule, ReactiveFormsModule, MatButtonModule
+    BrowserModule, HttpClientModule, AppRoutingModule, FormsModule, 
+    MatFormFieldModule, MatInputModule, ReactiveFormsModule, MatButtonModule
   ],
   providers: [
     provideAnimationsAsync()
