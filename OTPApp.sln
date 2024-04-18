@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTPApp.Server", "OTPApp.Server\OTPApp.Server.csproj", "{DE9FCC69-FD3E-4500-BA49-45EECA203AD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OTPApp.Server", "OTPApp.Server\OTPApp.Server.csproj", "{DE9FCC69-FD3E-4500-BA49-45EECA203AD4}"
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "otpapp.client", "otpapp.client\otpapp.client.esproj", "{43124867-5320-4CD6-9968-C5C8A3264A6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTPTests", "OTPTests\OTPTests.csproj", "{B9AB0A81-7390-4C49-96AD-6A3805E006CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{43124867-5320-4CD6-9968-C5C8A3264A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43124867-5320-4CD6-9968-C5C8A3264A6D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{43124867-5320-4CD6-9968-C5C8A3264A6D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B9AB0A81-7390-4C49-96AD-6A3805E006CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9AB0A81-7390-4C49-96AD-6A3805E006CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9AB0A81-7390-4C49-96AD-6A3805E006CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9AB0A81-7390-4C49-96AD-6A3805E006CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
